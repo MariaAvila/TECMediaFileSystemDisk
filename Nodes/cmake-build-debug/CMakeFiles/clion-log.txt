@@ -1,0 +1,4 @@
+/home/maria/clion-2018.2.6/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/maria/CLionProjects/Nodes
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maria/CLionProjects/Nodes/cmake-build-debug
