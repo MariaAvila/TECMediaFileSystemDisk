@@ -34,16 +34,18 @@ void DiskNodeFacade::GetXML() {
                 Video *newVid;
                 pElem->NextSibling();
                 TiXmlAttribute * one = pElem->FirstAttribute();
-
+                std::string* diskOne = (std::string*) one;
                 pElem->NextSibling();
                 TiXmlAttribute * two = pElem->FirstAttribute();
+                std::string* diskTwo= (std::string*) two;
                 pElem->NextSibling();
                 TiXmlAttribute * three = pElem->FirstAttribute();
+                std::string* diskThree = (std::string*) three;
                 pElem->NextSibling();
                 TiXmlAttribute * parity = pElem->FirstAttribute();
+                std::string* diskParity = (std::string*) parity;
                 if(currentDiskNode % 4 == 0){
-                    pAttrib = pElem->FirstAttribute();
-                    unsigned char *diskBuffer = (unsigned char*) pAttrib;
+
                     break;
                 }
                 break;
