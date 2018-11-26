@@ -8,6 +8,7 @@
 #import "DiskNodes.h"
 #include <string>
 #include <list>
+#include <tinyxml.h>
 /**
  * Class that interacts with the controller Node server
  */
@@ -21,9 +22,9 @@ private:
     std::string IP;
     int port;
     std::string path;
+    int currentDiskNode = 0;
 public:
-    void Add();
-    void Get();
+    void GetXML();
     void SwitchOn(int disk);
     DiskNodeFacade(std::string ip, int Port, std::string Path);
 

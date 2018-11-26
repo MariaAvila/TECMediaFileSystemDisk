@@ -18,14 +18,43 @@ DiskNodeFacade::DiskNodeFacade(std::string ip, int Port, std::string Path) {
 /**
  * Function that adds videos to the storage
  */
-void DiskNodeFacade::Add() {
+void DiskNodeFacade::GetXML() {
+    TiXmlDocument doc("example.xml");
+    if(doc.LoadFile()){
+        TiXmlHandle hDoc(&doc);
+        TiXmlElement* pElem;
+        TiXmlAttribute * pAttrib;
+        TiXmlHandle hRoot(0);
 
-}
-/**
- * Function that reads videos from the storage
- */
-void DiskNodeFacade::Get() {
+        pElem = hDoc.FirstChild().Element();
+        pAttrib = pElem->FirstAttribute();
+        int* opCode = (int*) pAttrib;
+        switch (*opCode){
+            case 0 :
+                Video *newVid;
+                pElem->NextSibling();
+                TiXmlAttribute * one = pElem->FirstAttribute();
 
+                pElem->NextSibling();
+                TiXmlAttribute * two = pElem->FirstAttribute();
+                pElem->NextSibling();
+                TiXmlAttribute * three = pElem->FirstAttribute();
+                pElem->NextSibling();
+                TiXmlAttribute * parity = pElem->FirstAttribute();
+                if(currentDiskNode % 4 == 0){
+                    pAttrib = pElem->FirstAttribute();
+                    unsigned char *diskBuffer = (unsigned char*) pAttrib;
+                    break;
+                }
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            default:
+                std::cout << "Invalid OPCode";
+        }
+    }
 }
 /**
  * Function that allows the user to turn off a disk node
