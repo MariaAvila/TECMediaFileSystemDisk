@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/maria/CLionProjects/Nodes/cmake-build-debug/Client.cpp" "/home/maria/CLionProjects/Nodes/cmake-build-debug/CMakeFiles/Nodes.dir/Client.cpp.o"
   "/home/maria/CLionProjects/Nodes/DiskNodeFacade.cpp" "/home/maria/CLionProjects/Nodes/cmake-build-debug/CMakeFiles/Nodes.dir/DiskNodeFacade.cpp.o"
   "/home/maria/CLionProjects/Nodes/DiskNodes.cpp" "/home/maria/CLionProjects/Nodes/cmake-build-debug/CMakeFiles/Nodes.dir/DiskNodes.cpp.o"
   "/home/maria/CLionProjects/Nodes/main.cpp" "/home/maria/CLionProjects/Nodes/cmake-build-debug/CMakeFiles/Nodes.dir/main.cpp.o"

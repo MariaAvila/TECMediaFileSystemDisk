@@ -96,6 +96,12 @@
 		<Unit filename="/home/maria/CLionProjects/Nodes/DiskNodes.h">
 			<Option target="Nodes"/>
 		</Unit>
+		<Unit filename="/home/maria/CLionProjects/Nodes/cmake-build-debug/Client.cpp">
+			<Option target="Nodes"/>
+		</Unit>
+		<Unit filename="/home/maria/CLionProjects/Nodes/cmake-build-debug/Client.h">
+			<Option target="Nodes"/>
+		</Unit>
 		<Unit filename="/home/maria/CLionProjects/Nodes/main.cpp">
 			<Option target="Nodes"/>
 		</Unit>

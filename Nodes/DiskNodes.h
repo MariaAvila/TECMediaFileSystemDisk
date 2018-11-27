@@ -12,11 +12,11 @@
 class DiskNodes {
 public:
     int diskSize = 0;
-    unsigned char *diskBuffer;
+    std::string diskBuffer;
     bool on = true;
     int busySection = 0;
     DiskNodes(int size);
-    void Add(unsigned char toAdd[]);
+    void delNode();
 };
 
 

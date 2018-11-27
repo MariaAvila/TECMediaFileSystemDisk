@@ -9,19 +9,9 @@
  */
 DiskNodes::DiskNodes(int size) {
     diskSize = size;
-    diskBuffer = new (std::nothrow) unsigned char [size];
-    if (diskBuffer == nullptr){
-        std::cout << "Error in memory allocation";
-        diskSize = 0;
-    }
 }
-/**
- *Function that allows the user to add values
- * @param toAdd
- */
-void DiskNodes::Add(unsigned char toAdd[]) {
-    for (int i = 0; i < diskSize; i++){
-        diskBuffer[busySection] = toAdd[i];
-        busySection++;
+ void DiskNodes::delNode() {
+    if(!on){
+        this->diskBuffer = "nullptr";
     }
 }

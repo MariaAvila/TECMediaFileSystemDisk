@@ -123,6 +123,33 @@ Nodes/fast:
 	$(MAKE) -f CMakeFiles/Nodes.dir/build.make CMakeFiles/Nodes.dir/build
 .PHONY : Nodes/fast
 
+Client.o: Client.cpp.o
+
+.PHONY : Client.o
+
+# target to build an object file
+Client.cpp.o:
+	$(MAKE) -f CMakeFiles/Nodes.dir/build.make CMakeFiles/Nodes.dir/Client.cpp.o
+.PHONY : Client.cpp.o
+
+Client.i: Client.cpp.i
+
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.cpp.i:
+	$(MAKE) -f CMakeFiles/Nodes.dir/build.make CMakeFiles/Nodes.dir/Client.cpp.i
+.PHONY : Client.cpp.i
+
+Client.s: Client.cpp.s
+
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.cpp.s:
+	$(MAKE) -f CMakeFiles/Nodes.dir/build.make CMakeFiles/Nodes.dir/Client.cpp.s
+.PHONY : Client.cpp.s
+
 DiskNodeFacade.o: DiskNodeFacade.cpp.o
 
 .PHONY : DiskNodeFacade.o
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Nodes"
+	@echo "... Client.o"
+	@echo "... Client.i"
+	@echo "... Client.s"
 	@echo "... DiskNodeFacade.o"
 	@echo "... DiskNodeFacade.i"
 	@echo "... DiskNodeFacade.s"

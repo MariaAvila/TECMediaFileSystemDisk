@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Nodes.dir/main.cpp.o"
   "CMakeFiles/Nodes.dir/DiskNodes.cpp.o"
   "CMakeFiles/Nodes.dir/DiskNodeFacade.cpp.o"
+  "CMakeFiles/Nodes.dir/Client.cpp.o"
   "Nodes.pdb"
   "Nodes"
 )
